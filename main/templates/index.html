@@ -1,0 +1,25 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+    <title>Главная страница</title>
+</head>
+<body>
+
+<main>
+
+    <h1>Поиск постов</h1>
+    <form action="/search/" method="get">
+        <p>По вхождению слова</p>
+        <div class="search-container">
+            <input type="text" name="s">
+            <input type="submit" value="Найти" class="button">
+        </div>
+    </form>
+    
+    <hr>
+
+    <a href="/post/form/" class="button add-post">Добавить пост</a>
+</body>
+</html>

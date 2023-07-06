@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Посты по запросу "{{ search_by }}"</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <main>
+        <a href="/" class="link">Назад</a>
+        <h1>Посты по запросу "{{ search_by }}"</h1>
+        {% for post in posts %}
+            <div class="post">
+                <img src="{{ post.picture }}" alt="" class="picture">
+                <p>{{ post.content }}</p>
+            </div>
+        {% endfor %}
+        <a href="/post/form/" class="button">Добавить пост</a>
+    </main>
+</body>
+</html>

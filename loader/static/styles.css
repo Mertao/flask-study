@@ -1,0 +1,64 @@
+/* Стили для основного контейнера */
+body {
+    display: flex; /* Устанавливает контейнеру свойство flex, чтобы его содержимое выстраивалось внутри по горизонтали */
+    justify-content: center; /* Выравнивание содержимого по горизонтали по центру */
+    align-items: flex-start; /* Выравнивание содержимого по вертикали вверху контейнера */
+    min-height: 100vh; /* Минимальная высота контейнера равная 100% высоты видимой области браузера (viewport height) */
+    font-family: Arial, Helvetica, sans-serif; /* Установка шрифта для текста внутри контейнера */
+    padding: 20px; /* Добавление внутренних отступов по 20 пикселей со всех сторон контейнера */
+    box-sizing: border-box; /* Устанавливает модель контентного блока box-sizing на border-box, чтобы отступы и границы учитывались внутри указанной ширины и высоты */
+}
+
+/* Стили для заголовка "Поиск постов" */
+h1 {
+    color: #333; /* Цвет текста "Поиск постов" */
+    font-size: 40px; /* Размер шрифта "Поиск постов" */
+    font-weight: bold; /* Жирность текста "Поиск постов" */
+}
+
+/* Стили для абзаца "по вхождению слова" */
+p {
+    color: #333; /* Цвет текста "по вхождению слова" */
+    font-size: 20px; /* Размер шрифта "по вхождению слова" */
+    font-weight: normal; /* Жирность текста "по вхождению слова" */
+}
+
+/* Стили для поля ввода текста */
+.search-container input[type="text"] {
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Стили для кнопки "Добавить пост" */
+.button {
+    font-size: 20px;
+    color: black;
+    width: 160px;
+    height: 50px;
+    background-color: #ccc;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    line-height: 50px;
+}
+
+/* Стили при наведении на кнопку "Добавить пост" */
+.button:hover {
+    background-color: #aaa;
+}
+
+/* Стили при нажатии на кнопку "Добавить пост" */
+.button:active {
+    background-color: #aaa;
+}
+
+.post .picture {
+    max-width: 60%;
+    max-height: 60%;
+}
